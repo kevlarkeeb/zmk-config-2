@@ -1,11 +1,4 @@
 
-/*          35 KEY MATRIX / LAYOUT MAPPING
-// | 0  | 1  | 2  | 3  | 4  |       | 5  | 6  | 7  | 8  | 9 |
-// | 10 | 11 | 12 | 13 | 14 |       | 15 | 16 | 17 | 18 | 19 |
-// | 20 | 21 | 22 | 23 | 24 |       | 25 | 26 | 27 | 28 | 29 |
-//            | 30 | 31 | 32 |     | 33 | 34 | 35 |
-*/
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -18,6 +11,14 @@
 
 #define TAPPING_TERM 200
 #define QUICK_TAP    100
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+  combo_##NAME { \
+    timeout-ms = <25>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+  };
 
 &lt {
 	flavor = "tap-preferred";
@@ -53,8 +54,9 @@
 };
 
 / {
-    combos {
+    /*combos {
         compatible = "zmk,combos";
+
         combo_undo {
             timeout-ms = <50>;
             key-positions = <20 21>;
@@ -70,8 +72,28 @@
             key-positions = <27 28>;
             bindings = <&kp SEMI>;
         };
-    };
+    };*/
+
+    combos {
+                compatible = "zmk,combos";
+
+                /* Chop Column 6 */     
+                COMBO(escape, &kp ESC, 0 1, DEFAULT) 
+                COMBO(tab, &kp TAB, 2 3, DEFAULT) 
+                            
+        };
+
+
+
 };
+
+/*          35 KEY MATRIX / LAYOUT MAPPING
+// | 0  | 1  | 2  | 3  | 4  |       | 5  | 6  | 7  | 8  | 9 |
+// | 10 | 11 | 12 | 13 | 14 |       | 15 | 16 | 17 | 18 | 19 |
+// | 20 | 21 | 22 | 23 | 24 |       | 25 | 26 | 27 | 28 | 29 |
+//            | 30 | 31 | 32 |     | 33 | 34 | 35 |
+*/
+
 
 / {
 
