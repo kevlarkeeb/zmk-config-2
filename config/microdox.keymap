@@ -31,6 +31,7 @@
 };
 
 / {
+
     behaviors {
         hm: layer_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -54,32 +55,15 @@
 };
 
 / {
-    /*combos {
-        compatible = "zmk,combos";
-
-        combo_undo {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&kp LC(Z)>;
-        };
-        combo_q {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp Q>;
-        };
-        combo_semicolon {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp SEMI>;
-        };
-    };*/
 
     combos {
                 compatible = "zmk,combos";
 
-                /* Chop Column 6 */     
+                /* Additional Nav */     
                 COMBO(escape, &kp ESC, 0 1, DEFAULT) 
-                COMBO(tab, &kp TAB, 2 3, DEFAULT) 
+                COMBO(tab, &kp TAB, 1 2, DEFAULT) 
+                COMBO(page_up, &kp PAGE_UP, 2 3, DEFAULT) 
+                COMBO(page_down, &kp PAGE_DOWN, 3 4, DEFAULT) 
                             
         };
 
@@ -96,6 +80,11 @@
 
 
 / {
+
+sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder_1 &encoder_2>;
+    };
 
     behaviors {
         hm: layer_mods {
@@ -126,6 +115,8 @@
         default_layer {
             label = "Default";
 
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+
             bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬───────────╮             ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
     &kp Q            &kp W         &kp E         &kp R        &kp T                      &kp Y        &kp U        &kp I         &kp O       &kp P
@@ -143,6 +134,8 @@
         nav_layer {
             label = "Navigation";
 
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+
             bindings = <
 //╭──────────┬──────────┬──────────┬──────────┬──────────╮               ╭──────────┬────────────────┬────────────────┬───────────────┬───────────╮
     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &kp PSCRN                  &gresc     &kp KP_NUMLOCK   &kp LA(LG(R))    &kp INS         &kp DEL
@@ -158,6 +151,8 @@
 
         oth_layer {
             label = "Other";
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
 
             bindings = <
 //╭────────────┬──────────────┬─────────────┬─────────────┬────────────╮                    ╭──────────┬──────────┬──────────┬──────────┬──────────╮
