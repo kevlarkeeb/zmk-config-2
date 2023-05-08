@@ -108,7 +108,7 @@
         default_layer {
             label = "Default";
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 
             bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬───────────╮             ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
@@ -127,7 +127,7 @@
         nav_layer {
             label = "Navigation";
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 
             bindings = <
 //╭──────────┬──────────┬──────────┬──────────┬──────────╮               ╭──────────┬────────────────┬────────────────┬───────────────┬───────────╮
@@ -145,7 +145,7 @@
         oth_layer {
             label = "Other";
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 
             bindings = <
 //╭────────────┬──────────────┬─────────────┬─────────────┬────────────╮                    ╭──────────┬──────────┬──────────┬──────────┬──────────╮
