@@ -32,30 +32,6 @@
 
 / {
 
-    behaviors {
-        hm: layer_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            quick_tap_ms = <QUICK_TAP>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        hs: homerow_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_SHIFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            quick_tap_ms = <QUICK_TAP>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-};
-
-/ {
-
     combos {
                 compatible = "zmk,combos";
 
@@ -66,8 +42,6 @@
                 COMBO(page_down, &kp PAGE_DOWN, 3 4, DEFAULT) 
                             
         };
-
-
 
 };
 
