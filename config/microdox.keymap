@@ -39,7 +39,20 @@
                 COMBO(escape, &kp ESC, 0 1, DEFAULT) 
                 COMBO(tab, &kp TAB, 1 2, DEFAULT) 
                 COMBO(page_up, &kp PAGE_UP, 2 3, DEFAULT) 
-                COMBO(page_down, &kp PAGE_DOWN, 3 4, DEFAULT)   
+                COMBO(page_down, &kp PAGE_DOWN, 3 4, DEFAULT) 
+
+
+                 /* Symbol */
+                COMBO(exclamation,&kp EXCL, 0 10, DEFAULT) 
+                COMBO(alias,&kp AT, 1 11, DEFAULT)
+                COMBO(hash,&kp HASH, 2 12, DEFAULT) 
+                COMBO(dollar,&kp DOLLAR, 3 13, DEFAULT) 
+                COMBO(percent,&kp PERCENT, 4 14, DEFAULT) 
+                COMBO(caret,&kp CARET, 5 15, DEFAULT) 
+                COMBO(ampersand,&kp AMPS, 6 16, DEFAULT) 
+                COMBO(asterisk,&kp ASTRK, 7 17, DEFAULT) 
+                COMBO(leftpar,&kp LPAR, 8 18, DEFAULT) 
+                COMBO(rightpar,&kp RPAR, 9 18, DEFAULT) 
 
                             
         };
