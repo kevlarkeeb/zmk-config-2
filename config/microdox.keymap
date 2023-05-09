@@ -56,8 +56,8 @@
 
                 /* Bluetooth */
                 COMBO(btclr,&bt BT_CLR, 0 9, OTH) 
-                COMBO(btclr,&bt BT_SEL 0, 10 19, OTH) 
-                COMBO(btclr,&bt BT_SEL 1, 20 29, OTH) 
+                COMBO(btsel1,&bt BT_SEL 0, 10 19, OTH) 
+                COMBO(btsel2,&bt BT_SEL 1, 20 29, OTH) 
                 
                             
         };
@@ -101,7 +101,7 @@
         default_layer {
             label = "Default";
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
 
             bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬───────────╮             ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
@@ -120,7 +120,7 @@
         nav_layer {
             label = "Navigation";
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
 
             bindings = <
 //╭──────────┬──────────┬──────────┬──────────┬──────────╮               ╭──────────┬────────────────┬────────────────┬───────────────┬───────────╮
@@ -138,7 +138,7 @@
         oth_layer {
             label = "Other";
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
 
             bindings = <
 //╭────────────┬──────────────┬─────────────┬─────────────┬────────────╮                    ╭──────────┬──────────┬──────────┬──────────┬──────────╮
