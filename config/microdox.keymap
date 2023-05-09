@@ -39,7 +39,24 @@
                 COMBO(escape, &kp ESC, 0 1, DEFAULT) 
                 COMBO(tab, &kp TAB, 1 2, DEFAULT) 
                 COMBO(page_up, &kp PAGE_UP, 2 3, DEFAULT) 
-                COMBO(page_down, &kp PAGE_DOWN, 3 4, DEFAULT) 
+                COMBO(page_down, &kp PAGE_DOWN, 3 4, DEFAULT)   
+
+                /* Symbol */
+                COMBO(exclamation, &kp EXCL, 0 10, DEFAULT) 
+                COMBO(alias, &kp AT, 1 11, DEFAULT)
+                COMBO(hash, &kp HASH, 2 12, DEFAULT) 
+                COMBO(dollar, &kp DOLLAR , 3 13, DEFAULT) 
+                COMBO(percent, &kp PERCENT , 4 14, DEFAULT) 
+                COMBO(caret, &kp CARET , 5 15, DEFAULT) 
+                COMBO(ampersand, &kp AMSP , 6 16, DEFAULT) 
+                COMBO(asterisk, &kp ASTRK , 7 17, DEFAULT) 
+                COMBO(leftpar, &kp LPAR , 8 18, DEFAULT) 
+                COMBO(rightpar, &kp RPAR , 9 18, DEFAULT) 
+
+                /* Bluetooth */
+                COMBO(btclear, &bt BT_CLR , 0 9, OTHER)     
+
+
                             
         };
 
@@ -125,7 +142,7 @@
 //╭────────────┬──────────────┬─────────────┬─────────────┬────────────╮                    ╭──────────┬──────────┬──────────┬──────────┬──────────╮
    &kp N1        &kp N2         &kp N3        &kp N4        &kp N5                            &kp N6      &kp N7     &kp N8     &kp N9     &kp N0
 //├────────────┼──────────────┼─────────────┼─────────────┼────────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
-    &bt BT_CLR   &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3                       &kp F11     &kp F12    &kp C_VOL_UP  &kp C_VOL_DN   &kp C_MUTE 
+    &trans   &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3                       &kp F11     &kp F12    &kp C_VOL_UP  &kp C_VOL_DN   &kp C_MUTE 
 //├────────────┼──────────────┼─────────────┼─────────────┼────────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
     &kp F1       &kp F2         &kp F3        &kp F4        &kp F5                            &kp F6      &kp F7     &kp F8     &kp F9     &kp F10
 //╰────────────┴──────────────┼─────────────┼─────────────┼────────────╯                    ╰──────────┼──────────┼──────────┼──────────┼──────────╯
