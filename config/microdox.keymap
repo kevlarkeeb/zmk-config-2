@@ -55,9 +55,9 @@
                 COMBO(rightpar,&kp RPAR, 9 18, DEFAULT) 
 
                 /* Bluetooth */
-                COMBO(btclr,&bt BT_CLR, 0 9, OTH) 
-                COMBO(btsel1,&bt BT_SEL 0, 10 19, OTH) 
-                COMBO(btsel2,&bt BT_SEL 1, 20 29, OTH) 
+                COMBO(btclr,&bt BT_CLR, 0 9, DEFAULT)
+                COMBO(btsel1,&bt BT_SEL 0, 10 19, DEFAULT) 
+                COMBO(btsel2,&bt BT_SEL 4, 20 29, DEFAULT) 
                 
                             
         };
