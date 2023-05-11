@@ -72,7 +72,7 @@
 
                 /* Lock Layer */
                 COMBO(lock,&tog OTH, 4 5, DEFAULT) 
-                COMBO(unlock,&tog DEFAULT, 4 5, OTH)
+                COMBO(unlock,&tog DEFAULT, 14 15, DEFAULT)
                 
                             
         };
