@@ -55,15 +55,15 @@
 
                  /* Column 10-19,20-29 Function Row*/
                 COMBO(f1,&kp F1, 10 20, DEFAULT) 
-                COMBO(f2,&kp f2, 11 21, DEFAULT)
-                COMBO(f3,&kp f3, 12 22, DEFAULT) 
-                COMBO(f4,&kp f4, 13 23, DEFAULT) 
-                COMBO(f5,&kp f5, 14 24, DEFAULT) 
-                COMBO(f6,&kp f6, 15 25, DEFAULT) 
-                COMBO(f7,&kp f7, 16 26, DEFAULT) 
-                COMBO(f8,&kp f8, 17 27, DEFAULT) 
-                COMBO(f9,&kp f9, 18 28, DEFAULT) 
-                COMBO(f10,&kp f10, 19 29, DEFAULT) 
+                COMBO(f2,&kp F2, 11 21, DEFAULT)
+                COMBO(f3,&kp F3, 12 22, DEFAULT) 
+                COMBO(f4,&kp F4, 13 23, DEFAULT) 
+                COMBO(f5,&kp F5, 14 24, DEFAULT) 
+                COMBO(f6,&kp F6, 15 25, DEFAULT) 
+                COMBO(f7,&kp F7, 16 26, DEFAULT) 
+                COMBO(f8,&kp F8, 17 27, DEFAULT) 
+                COMBO(f9,&kp F9, 18 28, DEFAULT) 
+                COMBO(f10,&kp F0, 19 29, DEFAULT) 
 
                 /* Bluetooth */
                 COMBO(btclr,&bt BT_CLR, 0 9, DEFAULT)
