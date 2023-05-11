@@ -71,7 +71,8 @@
                 COMBO(btsel2,&bt BT_SEL 4, 20 29, DEFAULT) 
 
                 /* Lock Layer */
-                COMBO(lock,&tog OTH, 4 5, DEFAULT)
+                COMBO(lock,&tog OTH, 4 5, DEFAULT) 
+                COMBO(unlock,&tog DEFAULT, 4 5, OTH)
                 
                             
         };
