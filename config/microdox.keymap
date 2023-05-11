@@ -69,6 +69,9 @@
                 COMBO(btclr,&bt BT_CLR, 0 9, DEFAULT)
                 COMBO(btsel1,&bt BT_SEL 0, 10 19, DEFAULT) 
                 COMBO(btsel2,&bt BT_SEL 4, 20 29, DEFAULT) 
+
+                /* Lock Layer */
+                COMBO(lock,&tog OTH, 4 5, DEFAULT)
                 
                             
         };
@@ -140,7 +143,7 @@
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
     &kp LC(Z)    &kp LPAR      &kp RPAR      &kp LBKT     &kp RBKT             &kp KP_N1    &kp KP_N2    &kp KP_N3     &kp LA(LG(R)) &kp C_MUTE
 //╰────────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰────────────┼─────────────┼─────────────┼─────────────┼──────────╯
-                 &trans        &trans        &caps_word                            &kp KP_NUM                    &kp KP_N0     &trans 
+                 &trans        &trans        &caps_word                            &kp KP_NUM            &kp KP_N0     &trans 
  //            ╰─────────────┴─────────────┴────────────────────────╯       ╰──────────────────────────┴─────────────┴─────────────╯
                >;
         };
@@ -152,13 +155,13 @@
 
             bindings = <
 //╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮       ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
-    &trans       &trans        &trans         &trans       &trans              &trans       &trans       &trans         &trans       &trans
+    &none       &none        &none         &none       &none              &none       &none       &none         &none       &none
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    &trans       &trans        &trans         &trans       &trans              &trans       &trans       &trans         &trans       &trans 
+    &none       &none        &none         &none       &none              &none       &none       &none         &none       &none 
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    &trans       &trans        &trans         &trans       &trans              &trans       &trans       &trans         &trans       &trans 
+    &none       &none        &none         &none       &none              &none       &none       &none         &none       &none 
 //╰────────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰────────────┼─────────────┼─────────────┼─────────────┼──────────╯
-                 &trans        &trans         &trans                           &trans                    &trans         &trans 
+                 &none        &none         &none                           &none                    &none         &none 
  //            ╰─────────────┴─────────────┴────────────────────────╯       ╰──────────────────────────┴─────────────┴─────────────╯
                 >; 
         };
