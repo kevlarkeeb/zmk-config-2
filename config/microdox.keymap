@@ -45,6 +45,26 @@
 	tapping-term-ms = <TAPPING_TERM>;
 };
 
+    ZMK_BEHAVIOR(hml, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    global-quick-tap = <150>;         // trying without pr originally was global-quick-tap-ms
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;             // delay positional check until key-release
+    )
+
+    ZMK_BEHAVIOR(hmr, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    global-quick-tap = <150>;         // trying without pr originally was global-quick-tap-ms
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;             // delay positional check until key-release
+    )
+
 / {
 
     combos {
@@ -124,6 +144,8 @@
             bindings = <&kp>, <&kp>;
         };
     };
+
+   
 
     keymap {
         compatible = "zmk,keymap";
