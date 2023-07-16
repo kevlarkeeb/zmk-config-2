@@ -55,7 +55,7 @@
                 compatible = "zmk,combos";
 
                 /* Additional Nav */  
-               /* COMBO(flip, &mo 4, 31 32, DEFAULT) */ 
+                COMBO(flip, &mo 4, 31 32, DEFAULT) 
                 COMBO(escape, &kp ESC, 0 1, DEFAULT) 
                 COMBO(tab, &kp TAB, 1 2, DEFAULT) 
                 COMBO(page_up, &kp PAGE_UP, 2 3, DEFAULT) 
