@@ -164,13 +164,13 @@
 
             bindings = <
 //╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮       ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
-    &kp APOS        &kp COMMA         &kp E         &kp R         &kp T                &kp Y        &kp U        &kp I         &kp O        &kp P
+    &kp APOS        &kp COMMA         &kp DOT        &kp P         &kp Y                &kp F        &kp G        &kp R         &kp R        &kp L
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    &hm LGUI A   &hml LALT S    &hml LSHFT D   &hml LCTRL F   &kp G             &kp H      &hmr RCTRL J   &hmr RSHFT K    &hmr RALT L   &hmr RGUI APOS
+    &hm LGUI A   &hml LALT O    &hml LSHFT E   &hml LCTRL U   &kp I             &kp D      &hmr RCTRL H   &hmr RSHFT T    &hmr RALT N   &hmr RGUI S
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    &kp Z        &kp X         &kp C         &kp V         &kp B                &kp N        &kp M        &kp COMMA     &kp DOT      &kp FSLH
+    &kp SEMI        &kp O         &kp J         &kp K         &kp X                &kp B        &kp M        &kp W     &kp V      &kp Z
 //╰────────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰────────────┼─────────────┼─────────────┼─────────────┼──────────╯
-                 &trans        &mo NAV       &kp BSPC                          &kp SPACE                &lt OTH ENTER   &kp KP_NUM  
+               &lt OTH TAB     &lt NAV ENTER      &lt NUM SPACE                &kp SPACE               &lt NAV ENTER    &lt OTH TAB 
  //            ╰─────────────┴─────────────┴────────────────────────╯       ╰──────────────────────────┴─────────────┴─────────────╯
             >;
         };
