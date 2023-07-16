@@ -106,6 +106,19 @@
 //            | 30 | 31 | 32 |     | 33 | 34 | 35 |
 */
 
+/ {
+    macros {
+      ZMK_MACRO(my_macro,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings 
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
+                )
+        };
+    };
 
 / {
 
@@ -169,7 +182,7 @@
 //╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮       ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
     &kp APOS     &kp COMMA     &kp DOT       &kp P         &kp Y              &kp F       &kp G          &kp R         &kp R         &kp L
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    &hm LGUI A   &hml LALT O   &hml LSHFT E  &hml LCTRL U  &kp I              &kp D       &hmr RCTRL H   &hmr RSHFT T  &hmr RALT N   &hmr RGUI S
+    &hm LGUI A   &hml LALT O   &hml LCTRL E  &hml LSHFT U  &kp I              &kp D       &hmr RSHFT H   &hmr RCTRL T  &hmr RALT N   &hmr RGUI S
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
     &kp SEMI     &kp O         &kp J         &kp K         &kp X              &kp B       &kp M          &kp W         &kp V         &kp Z
 //╰────────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰────────────┼─────────────┼─────────────┼─────────────┼──────────╯
