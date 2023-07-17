@@ -71,15 +71,15 @@
                 ;
                 )	
       ZMK_MACRO(SIGN_SCRIPT,
-        wait-ms = <30>;
-        tap-ms = <40>;
+        wait-ms = <0>;
+        tap-ms = <0>;
         bindings 
                 = <&macro_tap &kp PG_DN &kp PG_DN &kp PG_DN &kp PG_DN &kp PG_DN &kp PG_DN &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP &kp UP>
                 ;
                 )
       ZMK_MACRO(LOGIN,
-        wait-ms = <30>;
-        tap-ms = <40>;
+        wait-ms = <10>;
+        tap-ms = <10>;
         bindings 
                 = <&macro_tap &kp EXCL>
                 , <&macro_press &kp LSHFT> 
@@ -199,7 +199,7 @@
 //╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮       ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
     &kp LC(C)    &kp LC(V)     &kp LC(Z)     &kp LC(Y)      &none             &none       &none         &none         &none         &bootloader 
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    &kp LA(F2)     &kp LC(P)   &kp ENTER     &SIGN_SCRIPT  &kp LA(S)          &none       &none         &none         &none         &none 
+    &kp LA(F2)     &kp LC(P)   &kp ENTER     &SIGN_SCRIPT  &kp LA(S)          &none       &none         &none         &LOGIN        &none 
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
     &CLOSE_FILE   &none         &none         &kp LC(T)    &none              &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &none    &none 
 //╰────────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰────────────┼─────────────┼─────────────┼─────────────┼──────────╯
