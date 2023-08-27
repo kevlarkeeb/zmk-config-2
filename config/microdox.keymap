@@ -215,13 +215,13 @@
 
             bindings = <
 //╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮       ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
-    &kp DEL      &kp N1        &kp N2        &kp N3       &kp MINUS           &kp PLUS    &kp EXCL      &kp DQT       &kp BSLH      &kp QMARK 
+    &kp DEL      &kp N1        &kp N2        &kp N3       &kp MINUS           &kp PLUS    &kp EXCL      &kp AT_SIGN   &kp NON_US_BSLH  &kp QMARK 
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    &kp N0       &kp N4        &kp N5        &kp N6       &kp SLASH           &kp STAR    &kp AMPS      &kp PRCNT     &kp CARET     &kp TILDE 
+    &kp N0       &kp N4        &kp N5        &kp N6       &kp SLASH           &kp STAR    &kp AMPS      &kp PRCNT     &kp CARET        &kp LS(NON_US_HASH) 
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    &kp DOT      &kp N7        &kp N8        &kp N9       &kp UNDER           &kp LBRC    &kp RBRC      &kp LBKT      &kp RBKT      &kp HASH 
+    &kp DOT      &kp N7        &kp N8        &kp N9       &kp UNDER           &kp EQUAL   &kp RBRC      &kp LBKT      &kp RBKT         &kp NON_US_HASH 
 //╰────────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰────────────┼─────────────┼─────────────┼─────────────┼──────────╯
-                 &kp LPAR       &kp RPAR        &trans                            &trans                    &trans     &trans
+                 &kp LPAR       &kp RPAR        &trans                            &trans                    &kp LBRC     &kp RBRC
  //            ╰─────────────┴─────────────┴────────────────────────╯       ╰──────────────────────────┴─────────────┴─────────────╯
             >;
         };
