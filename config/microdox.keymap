@@ -161,13 +161,13 @@
 
             bindings = <
 //╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮       ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
-    &kp APOS     &kp COMMA     &kp DOT       &kp P         &kp Y              &kp F       &kp G          &kp C         &kp R       &kp L
+    &kp APOS     &kp COMMA     &kp DOT       &kp P         &kp Y              &kp F        &kp G         &kp C         &kp R         &kp L
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    &hm LGUI A   &hml LALT O   &hml LCTRL E  &hml LSHFT U  &kp I              &kp D       &hmr RSHFT H   &hmr RCTRL T  &hmr RALT N   &hmr RGUI S
+    &hm LGUI A   &hml LALT O   &hml LCTRL E  &hml LSHFT U  &kp I              &kp D        &hmr RSHFT H  &hmr RCTRL T  &hmr RALT N   &hmr RGUI S
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-  &hm LGUI SEMI  &hml LALT Q   &hml LCTRL J  &hml LSHFT K  &kp X              &kp B       &hmr RSHFT M   &hmr RCTRL W  &hmr RALT V   &hmr RGUI Z
+    &kp SEMI     &hm LGUI Q    &hml LALT J   &hml LCTRL K  &hml LSHFT X       &hmr RSHFT B &hmr RCTRL M  &hmr RALT W   &hmr RGUI V   &kp Z
 //╰────────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰────────────┼─────────────┼─────────────┼─────────────┼──────────╯
-                 &lt OTH TAB   &lt NAV ENTER    &lt NUM SPACE                 &kp SPACE     &none         &none 
+                 &lt OTH TAB  &lt NAV ENTER       &lt NUM SPACE                       &kp SPACE              &none         &none 
  //            ╰─────────────┴─────────────┴────────────────────────╯       ╰──────────────────────────┴─────────────┴─────────────╯
             >;
         };
@@ -197,7 +197,7 @@
 
             bindings = <
 //╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮       ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
-    &kp LC(C)    &kp LC(V)     &kp LC(Z)     &kp LC(Y)      &none             &none       &none         &none         &sys_reset    &bootloader 
+    &kp LC(C)    &kp LC(V)     &kp LC(Z)     &kp LC(Y)     &sys_reset         &none       &none         &none         &sys_reset    &bootloader 
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
     &kp LA(F2)     &kp LC(P)   &kp ENTER     &SIGN_SCRIPT  &kp LA(S)          &none       &none         &none         &LOGIN        &none 
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
