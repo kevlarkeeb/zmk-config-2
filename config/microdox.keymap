@@ -167,7 +167,7 @@
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
     &kp SEMI     &hm LGUI Q    &hml LALT J   &hml LCTRL K  &hml LSHFT X       &hmr RSHFT B &hmr RCTRL M  &hmr RALT W   &hmr RGUI V   &kp Z
 //╰────────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰────────────┼─────────────┼─────────────┼─────────────┼──────────╯
-                 &lt OTH TAB  &lt NAV ENTER       &lt NUM SPACE                       &kp SPACE              &none         &none 
+                 &lt OTH TAB  &lt NAV ENTER       &lt NUM SPACE                       &kp SPACE          &sys_reset    &lt OTH TAB 
  //            ╰─────────────┴─────────────┴────────────────────────╯       ╰──────────────────────────┴─────────────┴─────────────╯
             >;
         };
@@ -197,11 +197,11 @@
 
             bindings = <
 //╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮       ╭────────────┬─────────────┬─────────────┬─────────────┬──────────╮
-    &kp LC(C)    &kp LC(V)     &kp LC(Z)     &kp LC(Y)     &sys_reset         &none       &none         &none         &sys_reset    &bootloader 
+    &kp LC(C)    &kp LC(V)     &kp LC(Z)     &kp LC(Y)    &sys_reset          &none       &none         &none          &bootloader   &sys_reset 
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    &kp LA(F2)     &kp LC(P)   &kp ENTER     &SIGN_SCRIPT  &kp LA(S)          &none       &none         &none         &LOGIN        &none 
+    &kp LA(F2)     &kp LC(P)   &kp ENTER     &SIGN_SCRIPT  &kp LA(S)          &none       &none         &none          &LOGIN        &none 
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    &CLOSE_FILE   &none         &none         &kp LC(T)    &none              &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &none    &none 
+    &CLOSE_FILE   &kp LC(T)   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &none       &none 
 //╰────────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰────────────┼─────────────┼─────────────┼─────────────┼──────────╯
                  &trans        &trans        &trans                            &trans                    &trans     &trans
  //            ╰─────────────┴─────────────┴────────────────────────╯       ╰──────────────────────────┴─────────────┴─────────────╯
