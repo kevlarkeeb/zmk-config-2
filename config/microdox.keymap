@@ -22,7 +22,7 @@
 #define NUM     3
 #define FLP     4
 
-#define TAPPING_TERM 100 // reduced from 200 18/02/2024
+#define TAPPING_TERM 150 // reduced from 200 18/02/2024
 #define QUICK_TAP    100
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
