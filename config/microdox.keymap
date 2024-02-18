@@ -22,7 +22,7 @@
 #define NUM     3
 #define FLP     4
 
-#define TAPPING_TERM 150 // reduced from 200 18/02/2024
+#define TAPPING_TERM 200
 #define QUICK_TAP    100
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
@@ -167,7 +167,7 @@
 //├────────────┼─────────────┼─────────────┼─────────────┼──────────┤       ├────────────┼─────────────┼─────────────┼─────────────┼──────────┤
     &kp SEMI     &hm LGUI Q    &hml LALT J   &hml LCTRL K  &hml LSHFT X       &hmr RSHFT B &hmr RCTRL M  &hmr RALT W   &hmr RGUI V   &kp Z
 //╰────────────┴─────────────┼─────────────┼─────────────┼──────────╯       ╰────────────┼─────────────┼─────────────┼─────────────┼──────────╯
-                 &lt OTH TAB  &lt NAV ENTER       &lt NUM SPACE                       &kp SPACE         &lt NAV ENTER   &lt OTH TAB 
+                 &lt OTH TAB  &lt NAV ENTER       &lt NUM SPACE                       &kp SPACE           &none        &lt OTH TAB 
  //            ╰─────────────┴─────────────┴────────────────────────╯       ╰──────────────────────────┴─────────────┴─────────────╯
             >;
         };
